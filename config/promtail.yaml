@@ -21,3 +21,8 @@ scrape_configs:
     labels:
       job: gerador-log
       __path__: /logs/gerador-log/*log
+  - targets:
+      - localhost
+    labels:
+      job: pims-log
+      __path__: /logs/pims/*log
